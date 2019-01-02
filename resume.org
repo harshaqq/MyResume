@@ -1,0 +1,84 @@
+#+OPTIONS: toc:nil H:10 tex:t, author:nil date:nil, created:nil, validate:nil, num:nil, html-postamble:nil
+#+STARTUP: hidestars indent
+#+LaTeX_HEADER: \usepackage{mycv}
+#+LaTeX_HEADER: \hypersetup{colorlinks=true, urlcolor={url-gray}}
+#+LaTeX_CLASS_OPTIONS: [letterpaper]
+#+LaTeX_HEADER: \usepackage{enumitem}
+#+LaTeX_HEADER: \setlist{leftmargin=0.25in,nosep}
+
+#+MACRO: FIRST    Sriharsha
+#+MACRO: LAST     Bhat
+#+MACRO: FULL     {{{FIRST}}} {{{LAST}}}
+#+MACRO: EMAIL    sriharsha.metal@gmail.com
+#+MACRO: PHONE    +91 8095903181
+#+MACRO: ADDRESS1 D-903, GR regent park, Gottigere
+#+MACRO: ADDRESS2 Bengaluru, India
+
+#+MACRO: HEADER { {{{FULL}}} }{ {{{EMAIL}}} }{ {{{PHONE}}} }{ {{{ADDRESS1}}} }{ {{{ADDRESS2}}} }
+
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+#+HTML_HEAD: <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" />
+#+HTML_HEAD_EXTRA: <style> #content { padding-left: 1rem; padding-right: 1rem; padding-top: 1rem; } </style>
+#+HTML_HEAD_EXTRA: <style>li {white-space: pre !important;} </style>
+#+HTML_HEAD_EXTRA: <style>body {font-family: 'Ubuntu';} </style>
+
+{{{HEADER}}}
+
+* Summary
+- Computer Programmer with 7+ year of industry experience
+- Worked on Javascript, Typescript, Ruby, Python, HTML/CSS, C, Kotlin languages
+- Worked on reactjs, angularjs, twitter bootstrap, angular2, ROR, python bottle, freeRTOS frameworks
+- Familar with git, linux, bash, CI/CD, cloud and emacs
+* Experience
+** Software Engineer at [[https://wipro.com][Wipro Ltd.]]
+*** Nov 2018 - Present
+Working on web applications using javascript, HTML/CSS
+  - Worked on debugging and maintaining nodejs web application
+  - Developed, deployed javascript middleware for existing web api's
+  - Attended training for Agile
+** Software Engineer at [[https://accenture.com][Accenture Solutions Pvt Ltd]]
+*** Oct 2015 - Oct 2018
+Worked on web applications using javascript, HTML/CSS, ruby, nodejs, python, reactjs, bootstrap, angularjs, angular2, riotjs, alteryx C++ api's
+  - Developed, deployed, maintained one enterprise level web application for client to automate a problem statement
+  - Developed around 5 add-ons/plug-ins for connecting application code with third party tools using python
+  - Developed `major-mode` for one of the company's proprietary language for emacs
+  - Developed eclipse plugin for one java based framework which is currently used by developers 
+  - Worked on cloud deployment, CI/CD, TDD, BDD, RDD and Devops
+  - Worked with agile based project development
+  - Involved in mentoring, issue resolving in existing application 
+  - Involved in candidate screening, interview plan
+** Project Engineer at [[http://axiomconsult.com][Axiom Consulting Pvt Ltd]]
+*** Jul 2012 - Oct 2015
+Worked on windows desktop applications using C#, Web applications using ruby, python, javascript, angularjs, bootstrap
+  - Developed around 5+ windows desktop applications for automating testing using C#, VB and win32 api's
+  - Developed around 4+ web applications mainly using ruby, python, javascript with some third party engines like message brokers, cache's, load balancer etc.
+  - Worked on cloud deployment, CI/CD, TDD, BDD
+  - Developed around 5+ embedded projects using microcontrollers mainly 8051 and AVR with RTOS architecture
+  - Involved in brainstorming, requirement analysis, feezibility analysis, documentation and client delivery/operations
+
+** Trainee Engineer at [[http://delopt.co.in][DELOPT Pvt Ltd]]
+*** Jul 2011 - Jul 2012
+Worked on developing test cases for embedded softwares written in C. Learnt concept of low level languages like C/assembly
+  - Developed around 50 unit test cases for C modules
+  - Built windows desktop application for testing
+  - Learnt about low level computing, operating digital testing instruments
+
+** Volunteer work
+*** Jan 2012 - May 2014
+Worked on development of embedded projects
+  - Worked on raspberry pi, arduino, avr
+  - Developed around 30+ solutions using C and microcontrollers
+
+* Education
+** Sanjay Memorial Polytechnic, Sagar, Karnataka, India
+*** Jun 2008 - May 2011
+Diploma, Electronics and communication Engg., GPA: 7.5/10
+
+* Skills
+- Most comfortable with :: Jvascript, Python, Ruby, HTML/CSS/SASS, Linux, Bash, Emacs, Git
+- Have worked with :: C, C++, Java, Kotlin
+
+* Personal Info
+- Date Of Birth:    11-03-1991
+- Nationality:      Indian
+- Languages known:  English, Kannada, Hindi
