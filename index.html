@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2019-01-11 Fri 20:34 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" />
+<style> #content { padding-left: 1rem; padding-right: 1rem; padding-top: 1rem; } </style>
+<style>li {white-space: pre !important;} </style>
+<style>body {font-family: 'Ubuntu';} </style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<p>
+{ Sriharsha Bhat }{ sriharsha.metal@gmail.com }{ +91 8095903181 }{ D-903, GR regent park, Gottigere }{ Bengaluru, India }
+</p>
+
+<div id="outline-container-orgf0ac58a" class="outline-2">
+<h2 id="orgf0ac58a">Summary</h2>
+<div class="outline-text-2" id="text-orgf0ac58a">
+<ul class="org-ul">
+<li>Computer Programmer with 7+ year of industry experience</li>
+<li>Worked on Javascript, Typescript, Ruby, Python, HTML/CSS, C, Kotlin languages</li>
+<li>Worked on reactjs, angularjs, twitter bootstrap, angular2, ROR, python bottle, freeRTOS frameworks</li>
+<li>Familar with git, linux, bash, CI/CD, cloud and emacs</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org088e21a" class="outline-2">
+<h2 id="org088e21a">Experience</h2>
+<div class="outline-text-2" id="text-org088e21a">
+</div>
+<div id="outline-container-org5f37a02" class="outline-3">
+<h3 id="org5f37a02">Software Engineer at <a href="https://wipro.com">Wipro Ltd.</a></h3>
+<div class="outline-text-3" id="text-org5f37a02">
+</div>
+<div id="outline-container-org729b0d1" class="outline-4">
+<h4 id="org729b0d1">Nov 2018 - Present</h4>
+<div class="outline-text-4" id="text-org729b0d1">
+<p>
+Working on web applications using javascript, HTML/CSS
+</p>
+<ul class="org-ul">
+<li>Worked on debugging and maintaining nodejs web application</li>
+<li>Developed, deployed javascript middleware for existing web api's</li>
+<li>Attended training for Agile</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org317e348" class="outline-3">
+<h3 id="org317e348">Software Engineer at <a href="https://accenture.com">Accenture Solutions Pvt Ltd</a></h3>
+<div class="outline-text-3" id="text-org317e348">
+</div>
+<div id="outline-container-org500cb9f" class="outline-4">
+<h4 id="org500cb9f">Oct 2015 - Oct 2018</h4>
+<div class="outline-text-4" id="text-org500cb9f">
+<p>
+Worked on web applications using javascript, HTML/CSS, ruby, nodejs, python, reactjs, bootstrap, angularjs, angular2, riotjs, alteryx C++ api's
+</p>
+<ul class="org-ul">
+<li>Developed, deployed, maintained one enterprise level web application for client to automate a problem statement</li>
+<li>Developed around 5 add-ons/plug-ins for connecting application code with third party tools using python</li>
+<li>Developed `major-mode` for one of the company's proprietary language for emacs</li>
+<li>Developed eclipse plugin for one java based framework which is currently used by developers</li>
+<li>Worked on cloud deployment, CI/CD, TDD, BDD, RDD and Devops</li>
+<li>Worked with agile based project development</li>
+<li>Involved in mentoring, issue resolving in existing application</li>
+<li>Involved in candidate screening, interview plan</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgd082a69" class="outline-3">
+<h3 id="orgd082a69">Project Engineer at <a href="http://axiomconsult.com">Axiom Consulting Pvt Ltd</a></h3>
+<div class="outline-text-3" id="text-orgd082a69">
+</div>
+<div id="outline-container-orgce809ef" class="outline-4">
+<h4 id="orgce809ef">Jul 2012 - Oct 2015</h4>
+<div class="outline-text-4" id="text-orgce809ef">
+<p>
+Worked on windows desktop applications using C#, Web applications using ruby, python, javascript, angularjs, bootstrap
+</p>
+<ul class="org-ul">
+<li>Developed around 5+ windows desktop applications for automating testing using C#, VB and win32 api's</li>
+<li>Developed around 4+ web applications mainly using ruby, python, javascript with some third party engines like message brokers, cache's, load balancer etc.</li>
+<li>Worked on cloud deployment, CI/CD, TDD, BDD</li>
+<li>Developed around 5+ embedded projects using microcontrollers mainly 8051 and AVR with RTOS architecture</li>
+<li>Involved in brainstorming, requirement analysis, feezibility analysis, documentation and client delivery/operations</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org4fe2882" class="outline-3">
+<h3 id="org4fe2882">Trainee Engineer at <a href="http://delopt.co.in">DELOPT Pvt Ltd</a></h3>
+<div class="outline-text-3" id="text-org4fe2882">
+</div>
+<div id="outline-container-org79e915c" class="outline-4">
+<h4 id="org79e915c">Jul 2011 - Jul 2012</h4>
+<div class="outline-text-4" id="text-org79e915c">
+<p>
+Worked on developing test cases for embedded softwares written in C. Learnt concept of low level languages like C/assembly
+</p>
+<ul class="org-ul">
+<li>Developed around 50 unit test cases for C modules</li>
+<li>Built windows desktop application for testing</li>
+<li>Learnt about low level computing, operating digital testing instruments</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orge6af7bb" class="outline-3">
+<h3 id="orge6af7bb">Volunteer work</h3>
+<div class="outline-text-3" id="text-orge6af7bb">
+</div>
+<div id="outline-container-org1f579cd" class="outline-4">
+<h4 id="org1f579cd">Jan 2012 - May 2014</h4>
+<div class="outline-text-4" id="text-org1f579cd">
+<p>
+Worked on development of embedded projects
+</p>
+<ul class="org-ul">
+<li>Worked on raspberry pi, arduino, avr</li>
+<li>Developed around 30+ solutions using C and microcontrollers</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgb4585e8" class="outline-2">
+<h2 id="orgb4585e8">Education</h2>
+<div class="outline-text-2" id="text-orgb4585e8">
+</div>
+<div id="outline-container-orga2bd663" class="outline-3">
+<h3 id="orga2bd663">Sanjay Memorial Polytechnic, Sagar, Karnataka, India</h3>
+<div class="outline-text-3" id="text-orga2bd663">
+</div>
+<div id="outline-container-org36ee3b8" class="outline-4">
+<h4 id="org36ee3b8">Jun 2008 - May 2011</h4>
+<div class="outline-text-4" id="text-org36ee3b8">
+<p>
+Diploma, Electronics and communication Engg., GPA: 7.5/10
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgde5adc0" class="outline-2">
+<h2 id="orgde5adc0">Skills</h2>
+<div class="outline-text-2" id="text-orgde5adc0">
+<dl class="org-dl">
+<dt>Most comfortable with</dt><dd>Jvascript, Python, Ruby, HTML/CSS/SASS, Linux, Bash, Emacs, Git</dd>
+<dt>Have worked with</dt><dd>C, C++, Java, Kotlin</dd>
+</dl>
+</div>
+</div>
+
+<div id="outline-container-org8abd76c" class="outline-2">
+<h2 id="org8abd76c">Personal Info</h2>
+<div class="outline-text-2" id="text-org8abd76c">
+<ul class="org-ul">
+<li>Date Of Birth:    11-03-1991</li>
+<li>Nationality:      Indian</li>
+<li>Languages known:  English, Kannada, Hindi</li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>
